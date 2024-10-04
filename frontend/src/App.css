@@ -1,0 +1,17 @@
+.raleway-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: rgba(4, 108, 4, 0.909);
+}
+
+.admin {
+  width: "100%";
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.cu {
+  cursor: pointer;
+}

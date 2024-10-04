@@ -1,0 +1,77 @@
+.price-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .container-fluid{
+    padding: 20px;
+  }
+  .search-bar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .date-picker {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .date-label {
+    margin: 0 10px;
+  }
+  
+  .date-picker-input {
+    cursor: pointer;
+  }
+  
+  .price-table {
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .price-table input {
+    width: 100%;
+  }
+  
+  .table th, .table td {
+    text-align: center;
+  }
+  
+  .search-input {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .date-picker-input {
+    max-width: 200px;
+    width: 100%;
+  }
+  
+  .table-responsive {
+    background-color: aqua;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .price-table {
+    min-width: 600px; 
+  }
+  
+  .price-input {
+    width: 100px;
+  }
+  
+  @media (max-width: 576px) {
+    .date-picker {
+      justify-content: space-between;
+    }
+  
+    .date-picker-input {
+      margin-bottom: 10px;
+    }
+  
+    .search-input {
+      margin-bottom: 10px;
+    }
+  }
+  

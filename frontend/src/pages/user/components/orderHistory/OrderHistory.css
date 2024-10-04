@@ -1,0 +1,9 @@
+.raleway-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: rgba(4, 108, 4, 0.909);
+}
+
+.ordersTableContainer {
+  padding: 20px;
+}

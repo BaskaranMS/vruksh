@@ -1,0 +1,29 @@
+@media screen and (min-width: 768px) {
+  /* .addToCartButton {
+    margin-top: 10px !important;
+  } */
+  .letters {
+    display: block;
+  }
+  .icons {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* .addToCartButton {
+    margin-top: 10px !important;
+  } */
+  .letters {
+    display: none;
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.raleway-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: rgba(4, 108, 4, 0.909);
+}

@@ -1,0 +1,417 @@
+/* .forgotPasswordContainer,
+.resetPasswordContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.forgotPasswordLeft,
+.resetPasswordLeft {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgotPasswordLeft img,
+.resetPasswordLeft img {
+  width: 80%;
+}
+
+.forgotPasswordRight,
+.resetPasswordRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.forgotPasswordTop,
+.resetPasswordTop,
+.forgotPasswordMiddle,
+.resetPasswordMiddle {
+  width: 80%;
+  padding-left: 60px;
+}
+
+.form-control {
+  border: 1px solid grey;
+  margin-top: 20px;
+  border-radius: 50px;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid grey;
+}
+
+.forgotPasswordMiddle button,
+.resetPasswordMiddle button {
+  padding: 5px 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: green;
+  border: 1px solid grey;
+  color: white;
+}
+
+.forgotPasswordMiddle button:hover,
+.resetPasswordMiddle button:hover {
+  background-color: black;
+  border: 1px solid grey;
+}
+
+.forgotPasswordMiddle button:focus,
+.resetPasswordMiddle button:focus {
+  border: 1px solid grey;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 845px) {
+  .forgotPasswordContainer,
+  .resetPasswordContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  .forgotPasswordLeft,
+  .resetPasswordLeft {
+    width: 100%;
+    height: fit-content;
+    flex: 0;
+    height: 20%;
+  }
+  .forgotPasswordRight,
+  .resetPasswordRight {
+    justify-content: flex-start;
+    padding-top: 20px;
+    height: 80%;
+    justify-content: flex-start;
+  }
+  .forgotPasswordTop,
+  .resetPasswordTop,
+  .forgotPasswordMiddle,
+  .resetPasswordMiddle {
+    width: 90%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .form-control {
+    width: 100%;
+  }
+  .form-group {
+    width: 100%;
+  }
+} */
+
+.forgotPasswordContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.forgotPasswordLeft {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgotPasswordLeft img {
+  width: 80%;
+}
+
+.forgotPasswordRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.forgotPasswordTop,
+.forgotPasswordMiddle {
+  width: 80%;
+  padding-left: 60px;
+}
+
+.forgotPasswordTop h6 {
+  font-weight: 700;
+}
+
+.forgotPasswordTop h2 {
+  letter-spacing: 2px;
+}
+
+.forgotPasswordMiddle .input {
+  width: 100%;
+  position: relative;
+}
+
+.forgotPasswordMiddle .input input {
+  padding: 10px 10px 10px 40px;
+  border: none;
+  border-bottom: 2px solid black;
+  border-radius: 5px 5px 0 0;
+  font-size: 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.forgotPasswordMiddle .input-icon {
+  position: relative;
+}
+
+.forgotPasswordMiddle .input-icon i {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+.forgotPasswordMiddle .input input:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.forgotPasswordMiddle .input input::placeholder {
+  color: #aaa;
+}
+
+.forgotPasswordContainer .forgotPasswordMiddle button {
+  padding: 5px 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: green;
+  border: 1px solid grey;
+  color: white;
+}
+
+.forgotPasswordContainer .forgotPasswordMiddle button:hover {
+  background-color: black;
+  border: 1px solid grey;
+}
+
+.forgotPasswordContainer .forgotPasswordMiddle button:focus {
+  border: 1px solid grey;
+  box-shadow: none;
+}
+
+.form-control.is-invalid {
+  border-bottom: 2px solid red;
+}
+
+@media screen and (max-width: 845px) {
+  .forgotPasswordContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .forgotPasswordLeft {
+    height: fit-content;
+    flex: 0.5;
+  }
+
+  .forgotPasswordRight {
+    justify-content: flex-start;
+    padding-top: 20px;
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .forgotPasswordTop,
+  .forgotPasswordMiddle {
+    width: 90%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+}
+
+.forgotPasswordContainer,
+.resetPasswordContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.forgotPasswordLeft,
+.resetPasswordLeft {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgotPasswordLeft img,
+.resetPasswordLeft img {
+  width: 80%;
+}
+
+.forgotPasswordRight,
+.resetPasswordRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.forgotPasswordTop,
+.resetPasswordTop,
+.forgotPasswordMiddle,
+.resetPasswordMiddle {
+  width: 80%;
+  padding-left: 60px;
+}
+
+.forgotPasswordTop h6,
+.resetPasswordTop h6 {
+  font-weight: 700;
+}
+
+.forgotPasswordTop h2,
+.resetPasswordTop h2 {
+  letter-spacing: 2px;
+}
+
+.forgotPasswordMiddle .input,
+.resetPasswordMiddle .input {
+  width: 100%;
+  position: relative;
+}
+
+.forgotPasswordMiddle .input input,
+.resetPasswordMiddle .input input {
+  padding: 10px 10px 10px 40px;
+  border: none;
+  border-bottom: 2px solid black;
+  border-radius: 5px 5px 0 0;
+  font-size: 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.forgotPasswordMiddle .input-icon,
+.resetPasswordMiddle .input-icon {
+  position: relative;
+}
+
+.forgotPasswordMiddle .input-icon i,
+.resetPasswordMiddle .input-icon i {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+.forgotPasswordMiddle .input input:focus,
+.resetPasswordMiddle .input input:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.forgotPasswordMiddle .input input::placeholder,
+.resetPasswordMiddle .input input::placeholder {
+  color: #aaa;
+}
+
+.forgotPasswordContainer .forgotPasswordMiddle button,
+.resetPasswordContainer .resetPasswordMiddle button {
+  padding: 5px 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: green;
+  border: 1px solid grey;
+  color: white;
+}
+
+.forgotPasswordContainer .forgotPasswordMiddle button:hover,
+.resetPasswordContainer .resetPasswordMiddle button:hover {
+  background-color: black;
+  border: 1px solid grey;
+}
+
+.forgotPasswordContainer .forgotPasswordMiddle button:focus,
+.resetPasswordContainer .resetPasswordMiddle button:focus {
+  border: 1px solid grey;
+  box-shadow: none;
+}
+
+.form-control.is-invalid {
+  border-bottom: 2px solid red;
+}
+
+@media screen and (max-width: 845px) {
+  .forgotPasswordContainer,
+  .resetPasswordContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .forgotPasswordLeft,
+  .resetPasswordLeft {
+    height: fit-content;
+    flex: 0.5;
+  }
+
+  .forgotPasswordRight,
+  .resetPasswordRight {
+    justify-content: flex-start;
+    padding-top: 20px;
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .forgotPasswordTop,
+  .resetPasswordTop,
+  .forgotPasswordMiddle,
+  .resetPasswordMiddle {
+    width: 90%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+}

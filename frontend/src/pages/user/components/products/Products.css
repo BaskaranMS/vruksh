@@ -1,0 +1,103 @@
+.productsComponentContainer {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.productsTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  padding: 0px 20px;
+}
+.productsSearch {
+  width: 25%;
+}
+.productsCategory {
+  width: 25%;
+}
+.productsTableContainer {
+  padding: 10px;
+  width: 100%;
+  overflow-x: scroll;
+  z-index: 100;
+}
+.productsTable .table-center td {
+  text-align: center;
+}
+
+.productsTable .quantity-controls {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.productsTable .quantity-controls:hover {
+  cursor: pointer;
+}
+
+.productsTable .sizeProducts {
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 855px) {
+  .productsTop {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+  .productsSearch,
+  .productsCategory {
+    width: 80%;
+  }
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.raleway-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: rgba(4, 108, 4, 0.909);
+}
+
+@media screen and (min-width: 768px) {
+  /* .addToCartButton {
+    margin-top: 10px !important;
+  } */
+  .letters {
+    display: block;
+  }
+  .icons {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* .addToCartButton {
+    margin-top: 10px !important;
+  } */
+  .letters {
+    display: none;
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+  }
+  .userNewProducts {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+.userNewProducts {
+  display: flex;
+}
+
+.userNewProductsContainer {
+  flex: 1;
+}
+.userPlaceOrder {
+  flex: 1;
+  align-items: center;
+}

@@ -1,0 +1,398 @@
+/* .userSignUpContainer{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+.userSignUpContainer .userSignUpLeft{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userSignUpContainer .userSignUpLeft img{
+    width: 80%;
+}
+.userSignUpContainer .userSignUpRight{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.userSignUpContainer .signUpRightTop, .signUpMiddle, .signUpBottom{
+    width: 80%;
+    padding-left: 60px;
+}
+.userSignUpRight .signUpRightTop h6{
+    font-weight: 700;
+}
+.userSignUpRight .signUpRightTop h2{
+    letter-spacing: 2px;
+}
+.signUpMiddle .form-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.signUpMiddle .form-group {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  input.error {
+    border-color: red;
+  }
+  
+  .signUpMiddle .input{
+    width: 100%;
+  }
+  .signUpMiddle .input input {
+    padding: 10px 10px 10px 40px; 
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 5px 5px 0px 0px;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .signUpMiddle .input-icon{
+    position: relative;
+  }
+  .signUpMiddle .input-icon i{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+  }
+  .signUpMiddle .input input:focus {
+    outline: none;
+    border-bottom: 2px solid black; 
+  }
+  
+  .signUpMiddle .input input::placeholder {
+    color: #aaa; 
+  }
+  
+.userSignUpContainer .signUpMiddle button{
+    padding: 5px 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-weight: 600;
+    color: white;
+}
+.userSignUpContainer .signUpMiddle button:hover{
+    opacity: 0.7;
+}
+.userSignUpContainer .signUpMiddle button:focus{
+    border: 1px solid grey;
+    box-shadow: none;
+}
+.userSignUpContainer .signUpMiddle .privacy p{
+    font-weight: 300;
+    margin-top: 10px;
+}
+.userSignUpContainer .signUpBottom button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 700;
+}
+.userSignUpRight .signUpAdmin{
+    margin-top: 10px;
+    padding-left: 60px;
+    padding-top: 10px;
+    text-decoration: underline;
+}
+.userSignUpRight .signUpAdmin:hover{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:845px) {
+    .userSignUpContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .userSignUpContainer .userSignUpLeft{
+        width: 100%;
+        height: fit-content;
+        flex: 0;
+    }
+    .userSignUpContainer .userSignUpRight{
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+    .userSignUpContainer .signUpRightTop, .signUpMiddle, .signUpBottom{
+        width: 90%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .userSignUpContainer .form-control{
+        width: 100%;
+    }
+    .userSignUpContainer .form-group{
+        width: 100%;
+    }
+}
+
+.custom-tooltip {
+    color: #fff; 
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 5px 10px;
+  }
+  
+  .input {
+    position: relative;
+  }
+  
+  .input-icon input.is-invalid {
+    border-bottom-color: red; 
+  }
+   */
+.userSignUpContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.userSignUpContainer .userSignUpLeft {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.userSignUpContainer .userSignUpLeft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(90%);
+}
+.userSignUpContainer .userSignUpLeft::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.userSignUpContainer .userSignUpRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.userSignUpContainer .signUpRightTop,
+.signUpMiddle,
+.signUpBottom {
+  width: 80%;
+  padding-left: 60px;
+}
+.userSignUpRight .signUpRightTop h6 {
+  font-weight: 700;
+}
+.userSignUpRight .signUpRightTop h2 {
+  letter-spacing: 2px;
+}
+.signUpMiddle .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.signUpMiddle .form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+input.error {
+  border-color: red;
+}
+
+.signUpMiddle .input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+}
+.signUpMiddle .input input {
+  padding: 10px 10px 10px 40px;
+  border: none;
+  border-bottom: 2px solid black;
+  border-radius: 5px 5px 0px 0px;
+  font-size: 18px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.signUpMiddle .input-icon {
+  position: relative;
+}
+.signUpMiddle .input-icon i {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+.signUpMiddle .input input:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.signUpMiddle .input input::placeholder {
+  color: #aaa;
+}
+
+.userSignUpContainer .signUpMiddle button {
+  padding: 5px 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font-weight: 600;
+  color: white;
+}
+.userSignUpContainer .signUpMiddle button:hover {
+  opacity: 0.7;
+}
+.userSignUpContainer .signUpMiddle button:focus {
+  border: 1px solid grey;
+  box-shadow: none;
+}
+.userSignUpContainer .signUpMiddle .privacy p {
+  font-weight: 300;
+  margin-top: 10px;
+}
+.userSignUpContainer .signUpBottom button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 700;
+}
+.userSignUpRight .signUpAdmin {
+  margin-top: 10px;
+  padding-left: 60px;
+  padding-top: 10px;
+  text-decoration: underline;
+}
+.userSignUpRight .signUpAdmin:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 845px) {
+  /* .userSignUpContainer{
+        display: flex;
+        /* flex-direction: column; */
+  /* width: 100vw; */
+  /* padding: 10px; */
+  /* box-sizing: border-box; */
+  /* }
+    .userSignUpContainer .userSignUpLeft{
+        width: 100vh;
+        height: 100vh;
+        flex: 0;
+    }
+    .userSignUpContainer .userSignUpRight{
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+    .userSignUpContainer .signUpRightTop, .signUpMiddle, .signUpBottom{
+        width: 90%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .userSignUpContainer .form-control{
+        width: 100%;
+    }
+    .userSignUpContainer .form-group{
+        width: 100%;
+    } */
+  */ .userSignUpContainer {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .userSignUpContainer .userSignUpLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Behind the signup form */
+  }
+  .userSignUpContainer .userSignUpLeft img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(90%);
+  }
+  .userSignUpContainer .userSignUpRight {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .userSignUpContainer .signUpRightTop,
+  .signUpMiddle,
+  .signUpBottom {
+    width: 90%;
+    padding-left: 0;
+    margin: 0 auto;
+    text-align: center; /* Center text content */
+  }
+  .userSignUpContainer .signUpMiddle .input {
+    width: 100%;
+  }
+  .userSignUpContainer .signUpMiddle .input input {
+    width: 100%;
+  }
+  .userSignUpContainer .signUpBottom button {
+    width: 100%;
+  }
+  .userSignUpRight .signUpAdmin {
+    padding-left: 0;
+    text-align: center; /* Center admin login text */
+  }
+  .userSignUpContainer .signUpMiddle .privacy p {
+    font-weight: 500;
+    margin-top: 10px;
+  }
+}
+
+.custom-tooltip {
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.input {
+  position: relative;
+}
+
+.input-icon input.is-invalid {
+  border-bottom-color: red;
+}

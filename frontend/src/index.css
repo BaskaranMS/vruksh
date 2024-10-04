@@ -1,0 +1,33 @@
+styles.css .navbar-dark .nav-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-link-btn .nav-link-btn:hover {
+  background: white;
+  color: black;
+}
+
+.navbar-dark .nav-link:hover {
+  color: #e0e0e0; 
+  text-decoration: underline; 
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav {
+  display: flex; 
+  justify-content: center; 
+}
+
+.navbar-brand {
+  margin-right: auto; 
+  padding-left: 20px; 
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}

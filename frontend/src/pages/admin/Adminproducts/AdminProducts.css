@@ -1,0 +1,19 @@
+.admin {
+  width: "100%";
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .d-flex.flex-column {
+    flex-direction: column !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .d-flex.flex-column .me-md-2 {
+    margin-right: 0 !important;
+  }
+}

@@ -1,0 +1,162 @@
+.adminLogInContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.adminLogInLeft {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adminLogInLeft img {
+  width: 80%;
+}
+
+.adminLogInRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logInRightTop,
+.logInMiddle {
+  width: 80%;
+  padding-left: 60px;
+}
+
+.logInRightTop h6 {
+  font-weight: 700;
+}
+
+.logInRightTop h2 {
+  letter-spacing: 2px;
+}
+
+.logInMiddle .input {
+  width: 100%;
+  position: relative;
+}
+
+.logInMiddle .input input {
+  padding: 10px 10px 10px 40px;
+  border: none;
+  border-bottom: 2px solid black;
+  border-radius: 5px 5px 0 0;
+  font-size: 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logInMiddle .input-icon {
+  position: relative;
+}
+
+.logInMiddle .input-icon i {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+.logInMiddle .input input:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.logInMiddle .input input::placeholder {
+  color: #aaa;
+}
+
+.adminLogInContainer .logInMiddle button {
+  padding: 5px 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: green;
+  border: 1px solid grey;
+  color: white;
+}
+
+.adminLogInContainer .logInMiddle button:hover {
+  background-color: black;
+  border: 1px solid grey;
+}
+
+.adminLogInContainer .logInMiddle button:focus {
+  border: 1px solid grey;
+  box-shadow: none;
+}
+
+.adminLogInContainer .adminLogInLinks {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.adminLogInContainer .adminLink {
+  color: black;
+  text-decoration: none;
+}
+
+.adminLogInContainer .adminLink:hover {
+  text-decoration: underline;
+}
+
+.custom-tooltip {
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.form-control.is-invalid {
+  border-bottom: 2px solid red;
+}
+
+@media screen and (max-width: 845px) {
+  .adminLogInContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .adminLogInLeft {
+    height: fit-content;
+    flex: 0.5;
+  }
+
+  .adminLogInRight {
+    justify-content: flex-start;
+    padding-top: 20px;
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .logInRightTop,
+  .logInMiddle {
+    width: 90%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+}
